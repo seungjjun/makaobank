@@ -7,6 +7,7 @@
     "start": "parcel index.html --port 8080",
     "test": "jest",
     "watch:test": "jest --watchAll",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx",
     "codeceptjs": "codeceptjs run --steps",
     "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
     "codeceptjs:ui": "codecept-ui --app"

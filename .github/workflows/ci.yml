@@ -20,8 +20,6 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - name: Lint
-        run: npx eslint --ext .js,.jsx,.ts,.tsx .
       - name: Compile to check syntax
         run: npx tsc --noEmit
       - name: Run tests
