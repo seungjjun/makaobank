@@ -2,12 +2,12 @@
   "name": "makaobank-frontend",
   "version": "1.0.0",
   "description": "MakaoBank-frontend Application",
-  "main": "index.js",
   "scripts": {
     "start": "parcel index.html --port 8080",
     "test": "jest",
     "watch:test": "jest --watchAll",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx",
+    "build": "parcel build index.html",
     "codeceptjs": "codeceptjs run --steps",
     "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
     "codeceptjs:ui": "codecept-ui --app"
