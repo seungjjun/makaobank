@@ -48,25 +48,19 @@ export default function Account() {
         <Information>
           이름:
           {' '}
-          <p>
-            {bankStore.name}
-          </p>
+          {bankStore.name}
         </Information>
         <Information>
           계좌번호:
           {' '}
-          <p>
-            {bankStore.accountNumber}
-          </p>
+          {bankStore.accountNumber}
         </Information>
         {bankStore.amount > 0 ? (
           <Information>
             잔액:
             {' '}
-            <p>
-              {numberFormat(bankStore.amount)}
-              원
-            </p>
+            {numberFormat(bankStore.amount)}
+            원
           </Information>
         ) : (
           <Information>잔액이 없습니다</Information>

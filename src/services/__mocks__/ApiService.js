@@ -2,7 +2,7 @@
 
 export default class ApiService {
   async postSession({ accountNumber, password }) {
-    if (accountNumber === '1234' && password === 'password') {
+    if (accountNumber === '12345678' && password === 'Qwe1234!') {
       return {
         accessToken: 'ACCESS.TOKEN',
         name: 'Pikachu',

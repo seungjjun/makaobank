@@ -9,7 +9,7 @@ const baseUrl = config.apiBaseUrl;
 const server = setupServer(
   rest.post(`${baseUrl}/session`, async (req, res, ctx) => {
     const { accountNumber, password } = await req.json();
-    if (accountNumber === '1234' && password === 'password') {
+    if (accountNumber === '12341234' && password === 'Qwe1234!') {
       return res(ctx.json({
         accessToken: 'ACCESS.TOKEN',
         name: 'Pikachu',
@@ -23,7 +23,7 @@ const server = setupServer(
 
   rest.get(`${baseUrl}/accounts/me`, async (req, res, ctx) => res(ctx.json({
     name: 'Pikachu',
-    accountNumber: '1234',
+    accountNumber: '12341234',
     amount: 100_000,
   }))),
 

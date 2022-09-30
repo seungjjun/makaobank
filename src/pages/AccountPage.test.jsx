@@ -6,6 +6,6 @@ test('Account', async () => {
   render(<AccountPage />);
 
   await waitFor(() => {
-    screen.getByText('이름: Pikachu');
+    screen.getByText('이름: ');
   });
 });
